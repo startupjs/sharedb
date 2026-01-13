@@ -17,7 +17,7 @@
     "eslint-config-google": "^0.14.0",
     "mocha": "^10.2.0",
     "nyc": "^15.1.0",
-    "ot-json0-v2": "https://github.com/ottypes/json0#90a3ae26364c4fa3b19b6df34dad46707a704421",
+    "ot-json0-v2": "git+https://github.com/ottypes/json0.git#90a3ae26364c4fa3b19b6df34dad46707a704421",
     "ot-json1": "^1.0.2",
     "rich-text": "^4.1.0",
     "sharedb-legacy": "npm:sharedb@1.1.0",
@@ -34,7 +34,7 @@
     "docs:start": "cd docs && bundle exec jekyll serve --livereload",
     "test": "mocha",
     "test-cover": "nyc --temp-dir=coverage -r text -r lcov npm test",
-    "lint": "./node_modules/.bin/eslint --ignore-path .gitignore '**/*.js'",
+    "lint": "eslint --ignore-path .gitignore '**/*.js'",
     "lint:fix": "npm run lint -- --fix"
   },
   "repository": {
